@@ -1,14 +1,12 @@
-//
-//  TodoFirebaseApp.swift
-//  TodoFirebase
-//
-//  Created by Sullivan De carli on 22/04/2021.
-//
-
 import SwiftUI
-
+import Firebase
 @main
 struct TodoFirebaseApp: App {
+    
+    init() {
+    FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
